@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="jumbotron">
+    <h1>Welcome to General Motor Sdn Bhd!</h1>
+    <p title="About">Hello :D we are the specialist in automobile the industry for more than 30 years!</p>
+  </div>
+
+  <div class="brand-image">
+    <img src="/images/gm.jpg" alt="http://www.alexiussecuritylockandkey.com/car_brands/general_motors/" width="700" height="400" align="middle">
+  </div>
+</div>
+
+
+
+<div class="container">
+ <div class="navigation_bar"> <CAPTION><EM><h1>Categories</h1></EM></CAPTION>
+  <% @category.each do |elem| %>
+ <a href = <%="/categories/#{elem.id}" %>>
+    <p>
+     <%= elem.title %>
+    </p>
+  </a>
+  <% end %> </div>
+</div>
+
+
+<div id="tfheader">
+    <form id="tfnewsearch" method="get" action="http://www.google.com">
+            <input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
+    </form>
+  <div class="tfclear"></div>
+  </div>
+
+
+<form class="model">
+Category: <input type="text" name="Category"><br>
+Model: <input type="text" name="Model">
+<input type="submit"value="Submit">
+</form>
+
+<!-- <form name="input" action="demo_form_action.asp" method="get">
+Username: <input type="text" name="user">
+<input type="submit" value="Submit">
+</form> -->
